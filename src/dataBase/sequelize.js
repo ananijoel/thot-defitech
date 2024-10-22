@@ -7,7 +7,7 @@ let sequelize
 
 if(process.env.NODE_ENV === 'production') {
   sequelize = new Sequelize('ulrihrpy_anatide', 'ulrihrpy_anatide', 'yDY7z0jhieve67', {
-    host: 'localhost:3306',
+    host: 'localhost:2083',
     dialect: 'mariadb',
     dialectOptions: {
       timezone: 'Etc/GMT-2',
