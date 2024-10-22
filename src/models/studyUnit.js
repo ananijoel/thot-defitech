@@ -1,19 +1,19 @@
 module.exports = (sequelize, DataTypes) => {
-    return sequelize.define('event', {
+    return sequelize.define('studyUnit', {
       id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true
       },
-      name: {
+      Name: {
         type: DataTypes.STRING,
         allowNull: true
       },
-      date: {
+      Teacher: {
         type: DataTypes.STRING,
         allowNull: true
       },
-      lenght: {
+      Semester: {
         type: DataTypes.STRING,
         allowNull: true,
       }
