@@ -6,7 +6,7 @@ const studyUnitModel = require('../models/studyUnit')
 let sequelize
 
 if(process.env.NODE_ENV === 'production') {
-  sequelize = new Sequelize('ulrihrpy_anatide', 'ulrihrpy_anatide', '', {
+  sequelize = new Sequelize('ulrihrpy_anatide', 'ulrihrpy_anatide', 'yDY7z0jhieve67', {
     host: 'https://server197.web-hosting.com/',
     dialect: 'mariadb',
     dialectOptions: {

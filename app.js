@@ -9,7 +9,7 @@ const staticport = 3000
 const app = express()
 const port = process.env.PORT || staticport
 
-sequelize.init_dataBase()
+//sequelize.init_dataBase()
 
 app
     .use(bodyParser.json())// middleware qui sert a parser toutes les entres de la web app du format string au format json
@@ -18,7 +18,7 @@ app
     
 app.get('/', (req, res) => res.json('hello Thot'))
 
-require('./src/routes/events/add-event')(app)
+//require('./src/routes/events/add-event')(app)
 
 if(process.env.PORT){
     app.listen(port,() => console.log('le projet Thot-defitech est demarée'))
