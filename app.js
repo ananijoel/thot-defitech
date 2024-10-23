@@ -18,7 +18,26 @@ app
     
 app.get('/', (req, res) => res.json('hello Thot'))
 
+//event
 require('./src/routes/events/add-event')(app)
+require('./src/routes/events/delete-event')(app)
+require('./src/routes/events/get-event')(app)
+require('./src/routes/events/update-event')(app)
+
+//user
+require('./src/routes/user/add-user')(app)
+require('./src/routes/user/get-user-all')(app)
+require('./src/routes/user/update-user')(app)
+require('./src/routes/user/get-user-by-param')(app)
+require('./src/routes/user/delete-user')(app)
+require('./src/routes/user/user-login')(app)
+
+//file
+require('./src/routes/files/add-file')(app)
+require('./src/routes/files/add-file-infos')(app)
+require('./src/routes/files/download-file')(app)
+//timetable
+require('./src/routes/timetable/add-timetable')(app)
 
 if(process.env.PORT){
     app.listen(port,() => console.log('le projet Thot-defitech est demarée'))

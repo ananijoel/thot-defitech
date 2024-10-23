@@ -3,6 +3,7 @@ const fileModel = require('../models/file')
 const eventModel = require('../models/event')
 const userModel = require('../models/user')
 const studyUnitModel = require('../models/studyUnit')
+const timetableModel = require('../models/timetable')
 let sequelize
 
 if(process.env.NODE_ENV === 'production') {
@@ -30,6 +31,7 @@ const file = fileModel(sequelize,DataTypes)
 const event = eventModel(sequelize,DataTypes)
 const user = userModel(sequelize,DataTypes)
 const studyUnit = studyUnitModel(sequelize,DataTypes)
+const timetable = timetableModel(sequelize,DataTypes)
 
 const init_dataBase = () => {
   return sequelize.sync(
@@ -40,7 +42,7 @@ const init_dataBase = () => {
 }
 
 module.exports = { 
-  file,event,user,studyUnit,init_dataBase
+  timetable,file,event,user,studyUnit,init_dataBase
 }
 
 
