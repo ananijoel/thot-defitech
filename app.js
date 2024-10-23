@@ -16,7 +16,7 @@ app
     //.use(cors())
 
     
-app.get('/', (req, res) => res.json('hello Thot'))
+app.get('/', (req, res) => res.json('hello world'))
 
 //event
 require('./src/routes/events/add-event')(app)
