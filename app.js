@@ -7,7 +7,7 @@ const sequelize = require('./src/dataBase/sequelize')
 
 const staticport = 3000
 const app = express()
-const port = process.env.PORT || staticport
+const port = process.env.PORT //|| staticport
 
 sequelize.init_dataBase()
 

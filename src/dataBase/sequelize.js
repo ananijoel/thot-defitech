@@ -35,7 +35,7 @@ const timetable = timetableModel(sequelize,DataTypes)
 
 const init_dataBase = () => {
   return sequelize.sync(
-   {force:true}
+   {force:false}
   ).then(() => {
     console.log('La base de données a bien été initialisée !');
   });
