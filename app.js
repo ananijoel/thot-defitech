@@ -5,7 +5,7 @@ const sequelize = require('./src/dataBase/sequelize')
 //const multer = require('multer')
 //const favicon = require('serve-favicon')
 
-const staticport = 4159
+const staticport = 3000
 const app = express()
 const port = process.env.PORT || staticport
 
